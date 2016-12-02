@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>giztech</title>
+</head>
+<body>
+	<script>
+		function delay(callback) {
+			console.log('delaying...');
+			setTimeout(function() {
+				callback();
+			}, 2000);
+		}
+		delay(function() {
+			console.log('finish!!');
+		});
+	</script>
+</body>
+</html>
