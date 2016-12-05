@@ -1,5 +1,164 @@
 @charset "UTF-8";
-
 /* 回答はここに書いてね */
+.wrap {
+	font-size: 0;
+	text-align: center;
+}
+.wrap .wrap_inr {
+	display: inline-block;
+	margin: 10px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+.wrap .wrap_inr .original {
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	font-size: 16px;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* input_txt
+---------------- */
+.input_txt {
+	padding: 5px;
+	border: 1px solid #00BCD4;
+	border-radius: 5px;
+}
+
+.input_txt::-webkit-input-placeholder {
+	color: #00BCD4;
+}
+
+.input_txt:focus {
+	box-shadow: 0 0 7px #00BCD4;
+}
+
+/* input_txt
+---------------- */
+.txtarea {
+	height: 40px;
+	padding: 5px;
+	border: 1px solid #00BCD4;
+	border-radius: 5px;
+	resize: none;
+}
+
+/* radio
+---------------- */
+.radio {
+	cursor: pointer;
+}
+.radio .radio_btn {
+	display: none;
+}
+.radio .radio_txt {
+	position: relative;
+	display: inline-block;
+	padding: 3px 3px 3px 20px;
+}
+.radio .radio_txt:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	margin-top: -8px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	content: ' ';
+}
+.radio .radio_btn:checked + .radio_txt:after {
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	background-color: #00BCD4;
+	border-radius: 50%;
+	content: '';
+}
+
+/* checkbox
+---------------- */
+.checkbox .checkbox_inr {
+	display: none;
+}
+.checkbox .checkbox_txt {
+	position: relative;
+	display: inline-block;
+	padding: 3px 3px 3px 22px;
+}
+.checkbox .checkbox_txt:before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	margin-top: -8px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.checkbox .checkbox_inr:checked + .checkbox_txt:after {
+	position: absolute;
+	content: '';
+	top: 5px;
+	left: 3px;
+	width: 13px;
+	height: 5px;
+	border-bottom: 2px solid #00BCD4;
+	border-left: 2px solid #00BCD4;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/* select_wrap
+---------------- */
+.select_wrap {
+	position: relative;
+	background-color: #FFF;
+}
+.select_wrap .select_inr {
+	position: relative;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 5px 30px 5px 5px;
+	font-size: 14px;
+}
+
+.select_wrap:before {
+	position: absolute;
+	top: 7px;
+	right: 9px;
+	width: 8px;
+	height: 8px;
+	border-bottom: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	content: "";
+}
+
+/* button
+---------------- */
+.button {
+	padding: 5px 10px;
+	border: 1px solid #00BCD4;
+	border-radius: 5px;
+	color: #00BCD4;
+	cursor: pointer;
+}
+
+.button:active {
+	background-color: #00BCD4;
+	color: #FFF;
+}
 
 /* 回答はここに書いてね */

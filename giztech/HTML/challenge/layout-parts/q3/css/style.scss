@@ -8,33 +8,32 @@ table{
 	width: 100%;
 	text-align: center;
 	table-layout:fixed;
+	border: 1px solid #dedede;
 	tr th,
 	tr td:first-child{
 		padding: 10px;
 		font-size: 18px;
 		line-height: 26px;
 		background-color: #2244AA !important;
-		border-right: 1px solid #dedede;
-		border-bottom: 1px solid #dedede;
 		color: #fff;
 		vertical-align: middle;
+		border-left: 1px solid #dedede;
+	}
+	tr{
+		border-top: 1px solid #dedede;
 	}
 	tr td{
 		padding: 10px;
-		font-size: 18px;
-		line-height: 26px;
 		background-color: #FFFFFF;
-		border-right: 1px solid #dedede;
-		border-bottom: 1px solid #dedede;
+		border-left: 1px solid #dedede;
+		vertical-align: middle;
 	}
-	tr:nth-of-type(2n+1) td{
+	tr:nth-child(2n+1) td{
 		padding: 10px;
-		font-size: 18px;
-		line-height: 26px;
 		background-color: #ECF1F2;
 	}
 	tr:last-child{
-		border-top: 1px dotted #444 !important;
+		border-top: 2px dashed #000;
 	}
 }
 /* 回答はここに書いてね */
