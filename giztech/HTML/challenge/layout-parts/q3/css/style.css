@@ -1,8 +1,13 @@
 @charset "UTF-8";
 /* 回答はここに書いてね */
+body {
+	font-family: 'PT Sans', Helvetica, Arial, YuGothic, 'Kozuka Gothic std', sans-serif;
+}
+
 table {
 	width: 100%;
 	text-align: center;
+	table-layout: fixed;
 }
 table tr th,
 table tr td:first-child {
@@ -13,6 +18,7 @@ table tr td:first-child {
 	border-right: 1px solid #dedede;
 	border-bottom: 1px solid #dedede;
 	color: #fff;
+	vertical-align: middle;
 }
 table tr td {
 	padding: 10px;
@@ -27,6 +33,9 @@ table tr:nth-of-type(2n+1) td {
 	font-size: 18px;
 	line-height: 26px;
 	background-color: #ECF1F2;
+}
+table tr:last-child {
+	border-top: 1px dotted #444 !important;
 }
 
 /* 回答はここに書いてね */
