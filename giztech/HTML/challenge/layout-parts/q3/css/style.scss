@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* 回答はここに書いてね */
+table{
+	width: 100%;
+	text-align: center;
+	tr th,
+	tr td:first-child{
+		padding: 10px;
+		font-size: 18px;
+		line-height: 26px;
+		background-color: #2244AA !important;
+		border-right: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+		color: #fff;
+	}
+	tr td{
+		padding: 10px;
+		font-size: 18px;
+		line-height: 26px;
+		background-color: #FFFFFF;
+		border-right: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+	}
+	tr:nth-of-type(2n+1) td{
+		padding: 10px;
+		font-size: 18px;
+		line-height: 26px;
+		background-color: #ECF1F2;
+	}
+}
+/* 回答はここに書いてね */
