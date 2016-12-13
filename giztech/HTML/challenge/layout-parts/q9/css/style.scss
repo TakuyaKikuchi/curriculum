@@ -4,6 +4,99 @@
 .wrap{
 	width: 100%;
 	margin: 0 auto;
+	padding: 20px;
+	box-sizing:border-box;
 	background-color: #ECF1F2;
+	.box12{
+		.box12_inner{
+			width: 100%;
+			.box12_column{
+			}
+		}
+	}
+	.box6{
+		.box6_inner{
+			width: 50%;
+			.box6_column{
+			}
+		}
+	}
+	.box4{
+		.box4_inner{
+			width: 33.33%;
+			.box4_column{
+			}
+		}
+	}
+	.box3{
+		.box3_inner{
+			width: 25%;
+			.box3_column{
+			}
+		}
+	}
+	.box2n4{
+		.box2n4_inner{
+			width: 20%;
+			.box2n4_column{
+			}
+		}
+	}
+	.box2{
+		.box2_inner{
+			width: 16.66%;
+			.box2_column{
+			}
+		}
+	}
+	.box63{
+		.box63_inner_6{
+			width: 50%;
+			.box63_column_6{
+			}
+		}
+		.box63_inner_3{
+			width: 25%;
+			.box63_column_3{
+			}
+		}
+	}
+	.box24{
+		.box24_inner_2{
+			width: 16.66%;
+			.box24_column_2{
+			}
+		}
+		.box24_inner_4{
+			width: 33.33%;
+			.box24_column_4{
+			}
+		}
+	}
+	.box_area{
+		width: 100%;
+		font-size:0;
+		margin-bottom: 20px;
+		.box_inr{
+			display: inline-block;
+			text-align: center;
+			padding: 0 10px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height: 50px;
+			.box_col{
+				background-color: #fff;
+			}
+		}
+		.box_inr:first-child{
+			padding-left: 0;
+		}
+		.box_inr:last-child{
+			padding-right: 0;
+		}
+	}
+	.box_area:last-child{
+		margin-bottom: 0;
+	}
 }
 /* 回答はここに書いてね */
