@@ -1,5 +1,24 @@
 @charset "UTF-8";
-
 /* 回答はここに書いてね */
+.wrap {
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+	height: 333px;
+	margin: 0 auto;
+}
+.wrap .txt_area {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: left;
+	color: #fff;
+	box-sizing: border-box;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
 
 /* 回答はここに書いてね */
