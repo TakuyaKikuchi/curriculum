@@ -37,7 +37,56 @@
         ・input(type="submit")
         -->
         <!-- 回答はここに書いてね -->
-
+        <form class="wrap">
+            <div class="contents_title">
+                <p class="title_txt">Form Exercise</p>
+            </div><!-- /.title -->
+            <div class="input_area clearfix">
+                <div class="col_left">
+                    <ul>
+                        <!--  name  -->
+                        <li class="clearfix">
+                            <p class="item_title">name&nbsp;<sup>*</sup></p>
+                            <div class="cont"><input class="inpt_name inpt_init" type="text" name="name" required></div>
+                        </li>
+                        <!--  /name  -->
+                        <!--  Sex  -->
+                        <li class="clearfix">
+                            <p class="item_title">Sex</p>
+                            <div class="cont">
+                                <label class="radios_label">
+                                    <input class="input_sex" type="radio" name="sex" value="male">
+                                    <span class="radio_txt">male</span>
+                                </label>
+                                <label class="radios_label">
+                                    <input class="input_sex" type="radio" name="sex" value="female">
+                                    <span class="radio_txt">female</span>
+                                </label>
+                            </div>
+                        </li>
+                        <!--  /Sex  -->
+                        <!--  Email  -->
+                        <li class="clearfix">
+                            <p class="item_title">Email&nbsp;<sup>*</sup></p>
+                            <div class="cont"><input class="inpt_name inpt_init" type="text" placeholder="ex) hoge@gmail.com" name="Email" required></div>
+                        </li>
+                        <!--  /Email  -->
+                        <!--  Telephone  -->
+                        <li class="clearfix">
+                            <p class="item_title">Telephone</p>
+                            <div class="cont"><input class="inpt_name inpt_init" type="text" placeholder="ex) 08012345678" name="Telephone"></div>
+                        </li>
+                        <!--  /Telephone  -->
+                    </ul>
+                    <div class="input_button">
+                        <input class="submit_button inpt_init" type="submit" value="submit">
+                    </div><!-- /.input_button -->
+                </div><!-- /.col_left -->
+                <div class="col_right">
+                    <textarea class="text_area inpt_init" name="text_area" placeholder="Please fill in the message..."></textarea>
+                </div><!-- /.col_right -->
+            </div><!-- /.input_area -->
+        </form><!-- /.wrap -->
         <!-- 回答はここに書いてね -->
     </div>
 </div>

@@ -1,5 +1,149 @@
 @charset "UTF-8";
-
 /* 回答はここに書いてね */
+.clearfix:before {
+	content: " ";
+	display: table !important;
+	clear: both;
+}
+
+.clearfix:after {
+	content: " ";
+	display: table !important;
+	clear: both;
+}
+
+.wrap {
+	width: 700px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ECF1F2;
+}
+.wrap .contents_title {
+	position: relative;
+	margin-bottom: 20px;
+}
+.wrap .contents_title .title_txt {
+	position: relative;
+	display: inline-block;
+	padding-right: 10px;
+	background-color: #ECF1F2;
+	font-size: 24px;
+	font-weight: bold;
+}
+.wrap .contents_title:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+	content: "";
+}
+.wrap .input_area .inpt_init {
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	font-size: 16px;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.wrap .input_area .col_left {
+	float: left;
+	width: 300px;
+}
+.wrap .input_area .col_left ul {
+	margin-bottom: 20px;
+}
+.wrap .input_area .col_left ul li {
+	margin-top: 20px;
+}
+.wrap .input_area .col_left ul li .item_title {
+	float: left;
+	width: 100px;
+	line-height: 25px;
+	text-align: right;
+}
+.wrap .input_area .col_left ul li sup {
+	color: #F00;
+}
+.wrap .input_area .col_left ul li .cont {
+	float: right;
+	width: 180px;
+}
+.wrap .input_area .col_left ul li .cont .inpt_name {
+	width: 100%;
+	padding: 5px;
+	border-radius: 3px;
+	background-color: #FFF;
+	font-size: 12px;
+	line-height: 12px;
+	box-sizing: border-box;
+}
+.wrap .input_area .col_left ul li .cont .radio_label {
+	cursor: pointer;
+}
+.wrap .input_area .col_left ul li .cont .radio_label .input_sex {
+	display: none;
+}
+.wrap .input_area .col_left ul li .cont .radio_label .radio_txt {
+	position: relative;
+	display: inline-block;
+	padding: 3px 3px 3px 20px;
+}
+.wrap .input_area .col_left ul li .cont .radio_label .radio_txt:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	margin-top: -8px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	content: '';
+}
+.wrap .input_area .col_left ul li .cont .radio_label .input_sex:checked + .radio_txt:after {
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	background-color: #00BCD4;
+	border-radius: 50%;
+	content: '';
+}
+.wrap .input_area .col_left ul li:first-child {
+	margin-top: 0;
+}
+.wrap .input_area .col_left .input_button {
+	text-align: right;
+}
+.wrap .input_area .col_left .input_button .submit_button {
+	padding: 0 10px;
+	border-radius: 5px;
+	background-color: #00BCD4;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 26px;
+}
+.wrap .input_area .col_right {
+	float: right;
+	width: 380px;
+}
+.wrap .input_area .col_right .text_area {
+	width: 100%;
+	height: 203px;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #FFF;
+	font-size: 12px;
+	box-sizing: border-box;
+	resize: none;
+}
 
 /* 回答はここに書いてね */
