@@ -1,5 +1,43 @@
 @charset "UTF-8";
-
 /* 回答はここに書いてね */
+.balloon_box {
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+.balloon_box .wrap {
+	padding: 20px;
+	box-sizing: border-box;
+	border: 5px solid #222;
+	border-radius: 30px;
+}
+.balloon_box .wrap p {
+	font-size: 16px;
+	line-height: 16px;
+}
+.balloon_box .wrap:before {
+	content: "";
+	position: absolute;
+	bottom: -17px;
+	left: 82px;
+	margin-left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 17px solid #222;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+}
+.balloon_box .wrap:after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 82px;
+	margin-left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 17px solid #fff;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+}
 
 /* 回答はここに書いてね */
