@@ -50,11 +50,11 @@
 }
 
 .circle_box {
-	-webkit-animation: spin 1.5s;
-	-moz-animation: spin 1.5s;
-	-ms-animation: spin 1.5s;
-	-o-animation: spin 1.5s;
-	animation: spin 1.5s;
+	-webkit-animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+	-ms-animation: spin 1s infinite linear;
+	-o-animation: spin 1s infinite linear;
+	animation: spin 1s infinite linear;
 }
 .circle_box .circle {
 	margin: 0 auto;
@@ -65,44 +65,20 @@
 	border-radius: 50%;
 }
 
-@-webkit-keyframes spin {
-\t0% {
-		-webkit-transform: rotate(0deg);
-\t}
-\t100% {
-		-webkit-transform: rotate(360deg);
-\t}
-}
-@-moz-keyframes spin {
-\t0% {
-		-moz-transform: rotate(0deg);
-\t}
-\t100% {
-		-moz-transform: rotate(360deg);
-\t}
-}
-@-ms-keyframes spin {
-\t0% {
-		-ms-transform: rotate(0deg);
-\t}
-\t100% {
-		-ms-transform: rotate(360deg);
-\t}
-}
-@-o-keyframes spin {
-\t0% {
-		-o-transform: rotate(0deg);
-\t}
-\t100% {
-		-o-transform: rotate(360deg);
-\t}
-}
 @keyframes spin {
-\t0% {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
 		transform: rotate(0deg);
-\t}
-\t100% {
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
 		transform: rotate(360deg);
-\t}
+	}
 }
 /* 回答はここに書いてね */
