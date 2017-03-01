@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</script>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>
+		var root = 'http://jsonplaceholder.typicode.com';
+
+		$.ajax({
+			url: root + '/posts',
+			method: 'GET'
+		}).then(function(data) {
+			var template = '<ul>';
+
+			for (var i = 0; i < data.length; i++) {
+				var template +=
+				'<li>' +
+					'<div>' +
+							'<span>' + data[i].id + '</span>' +
+							'<span>' + data[i].title + '</span>' +
+							'<p>' + data[i].body + '</p>' +
+					'</div>' +
+				'</li>';
+			}
+			template += '</ul>';
+			$('body').append(template);
+		});
+	</script>
+</body>
+</html>

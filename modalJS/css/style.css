@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*モーダルコンテンツ*/
+.modal {
+	z-index: 9999;
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.modal_content {
+	position: relative;
+	top: 15%;
+	width: 100%;
+	background-color: #fff;
+}
+/*モーダルを閉じる*/
+/*モーダルを開く*/
+.modal_close,
+.modal_show { cursor: pointer; }
+
+
+
+
+
+
+.float_left { float: left; }
+.float_right { float: right; }
+.caution_wrap{
+	display: table;
+	background-color: #fff;
+	width: 640px;
+	height: 380px;
+	margin: auto;
+	border-radius: 15px;
+}
+.caution_wrap .info{
+	margin: 0 auto 38px;
+	width: 50px;
+	background-image: url(../img/icon_info.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 60px;
+	color: #f05a57;
+	font-size: 24px;
+	line-height: 50px !important;
+}
+
+.caution_wrap .caution{ display: table-cell; vertical-align: middle; }
+.conf {
+	margin: 0 auto 40px;
+	width: 540px;
+}
+.conf .point{
+	position: relative;
+	font-size: 15px;
+	color: #333333;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	padding-left: 70px;
+}
+.conf .point:last-of-type{
+	margin-bottom: 0;
+}
+.conf .point:before{
+	position: absolute;
+	left: 20px;
+	content: "";
+	display: block;
+	background-image: url(../img/icon_pointing.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 25px;
+	height: 20px;
+}
+
+.caution_wrap .btn_wrap {
+	display: block;
+	margin: 0 auto;
+	width: 410px;
+	height: 60px;
+}
+.caution_wrap .btn_wrap div{
+	display: block;
+	margin: 0 auto;
+	width: 190px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.caution_wrap .btn_wrap div:hover{
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity=70);
+	cursor: pointer;
+}
+.caution_wrap .btn_wrap div.request_btn{background-color: #27a5b8; }
+.caution_wrap .btn_wrap div.cancel_btn{background-color: #555555; }
+.common_btn{
+	display: block;
+	text-align: center;
+	margin: 0 auto 20px;
+	line-height: 1em;
+	border-radius: 6px;
+	box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+	color: #fff;
+}

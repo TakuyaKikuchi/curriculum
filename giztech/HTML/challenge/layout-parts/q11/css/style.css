@@ -48,7 +48,6 @@
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
-
 .circle_box {
 	-webkit-animation: spin 1s infinite linear;
 	-moz-animation: spin 1s infinite linear;

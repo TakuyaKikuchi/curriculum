@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/modal.js"></script>
+	<title>モーダル</title>
+</head>
+<body>
+	<div class="modal_show" style="border:3px outset #555;display:inline-block;border-radius:50px;background-color:#cfcfcf;color:#333;width:400px;height:100px;line-height:100px;text-align:center;">
+		押してね？
+	</div>
+	<div class="modal" style="display: none;">
+		<div class="modal_content caution_wrap">
+			<div class="caution">
+				<p class="info">確認</p>
+				<ul class="conf">
+					<li class="point">
+						あいうえお？
+					</li>
+					<li class="point">
+						かきくけこ？
+					</li>
+				</ul>
+				<div class="btn_wrap clearfix">
+					<div class="common_btn request_btn float_left">登録</div>
+					<div class="common_btn cancel_btn float_right modal_close">キャンセル</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

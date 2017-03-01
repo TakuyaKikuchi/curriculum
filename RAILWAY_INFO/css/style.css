@@ -1,0 +1,15 @@
+@charset "UTF-8";
+h1 {
+	position: relative;
+	font-size: 6.5vw;
+	text-align: center;
+	text-shadow: 5px 5px 5px #ccc;
+	color: #333;
+}
+h1:before {
+	left: 15%;
+	position: absolute;
+	content: "\002710";
+	font-size: 6.5vw;
+	margin-right: 1%;
+}

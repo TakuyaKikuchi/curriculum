@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</script>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>
+		var root = 'http://jsonplaceholder.typicode.com';
+		var array = [];
+		var title = "";
+		var body = "";
+		var id = "";
+		var list = [];
+		$.ajax({
+			url: root + '/posts',
+			method: 'GET'
+		}).then(function(data) {
+			console.log(data);
+			array = data;
+			for (var i = 0; i < data.length; i++){
+				id = array[i].id;
+				title = array[i].title;
+				body = array[i].body;
+				list +=
+				"<li>" +
+					"<div>" +
+						"<span>" + id + "</span>" +
+						"<span>" + title + "</span>" +
+						"<p>" + body + "</p>" +
+					"</div>" +
+				"</li>";
+			}
+			$('body').append("<ul>" + list + "</ul>");
+		});
+	</script>
+</body>
+</html>
