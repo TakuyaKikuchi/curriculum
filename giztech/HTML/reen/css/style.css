@@ -1,6 +1,5 @@
 body {
-	width: 1170px;
-}
+	width: 1170px; }
 
 /* -------------------------------------
 *
@@ -9,11 +8,10 @@ body {
 ------------------------------------- */
 #main {
 	width: 1170px;
-	background-image: url(../img/main/keyvisual.jpg);
-}
-#main .ttl {
-	text-align: center;
-}
-#main .ttl h1 {
-	font-size: 78px;
-}
+	background-image: url(../img/main/keyvisual.jpg); }
+  #main .ttl {
+		text-align: center; }
+    #main .ttl h1 {
+			font-size: 78px; }
+
+/*# sourceMappingURL=style.css.map */

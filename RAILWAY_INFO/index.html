@@ -4,7 +4,11 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.xdomainajax.js"></script>
 	<script src="js/tabChange.js"></script>
+	<script src="js/selectBox.js"></script>
+	<script src="js/test.js"></script>
+	<!-- <script src="js/delayRailway.js"></script> -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
 	<title>RAILWAY INFO</title>
@@ -22,7 +26,7 @@
 			</div>
 			<div class="section_col">
 				<div class="label">路線を選んでください</div>
-				<select name="railway" id="railway" class="original">
+				<select id="railway_inr" data-id="railway" class="select_inr original">
 					<option>路線を選んでください</option>
 					<option>中央線</option>
 					<option>中央線</option>
@@ -32,6 +36,7 @@
 					<option>中央線</option>
 				</select>
 			</div>
+			<div class="delay_button">遅延情報を取得する</div>
 		</div>
 	</div>
 </body>

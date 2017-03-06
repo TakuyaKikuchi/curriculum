@@ -4,47 +4,41 @@
 	display: inline-block;
 	cursor: pointer;
 	color: #fff;
-	margin-left: 10px;
-}
+	margin-left: 10px; }
 
 .small {
 	border-radius: 3px;
 	font-size: 16px;
 	line-height: 26px;
-	padding: 0 15px;
-}
+	padding: 0 15px; }
 
 .middle {
 	border-radius: 5px;
 	font-size: 20px;
 	line-height: 32px;
-	padding: 0 20px;
-}
+	padding: 0 20px; }
 
 .large {
 	border-radius: 7px;
 	font-size: 24px;
 	line-height: 38px;
-	padding: 0 25px;
-}
+	padding: 0 25px; }
 
 .common {
 	background-color: #00BCD4;
-	margin-left: 0;
-}
+	margin-left: 0; }
 
 .error {
-	background-color: #FF4081;
-}
+	background-color: #FF4081; }
 
 .disabled {
-	background-color: #E5E5E5;
-}
+	background-color: #E5E5E5; }
 
 .shadow {
 	color: #222;
 	background-color: #FFFFFF;
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12);
-}
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12); }
 
 /* 回答はここに書いてね */
+
+/*# sourceMappingURL=style.css.map */

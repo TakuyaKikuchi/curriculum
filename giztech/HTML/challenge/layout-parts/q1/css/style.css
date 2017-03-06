@@ -6,27 +6,24 @@
 	width: 900px;
 	font-size: 16px;
 	line-height: 16px;
-	background-color: #EFF3F4;
-}
-.section .section_inner {
-	float: left;
-	margin-right: 20px;
-	width: 270px;
-	box-sizing: border-box;
-	border: 20px solid #3274AE;
-}
-.section .section_inner .section_column {
-	box-sizing: border-box;
-	width: 230px;
-	border: 10px solid #012334;
-}
-.section .section_inner .section_column p {
-	display: block;
-	background-color: #EAF4FF;
-	padding: 20px;
-}
-.section .section_inner:last-child {
-	margin-right: 0;
-}
+	background-color: #EFF3F4; }
+  .section .section_inner {
+		float: left;
+		margin-right: 20px;
+		width: 270px;
+		box-sizing: border-box;
+		border: 20px solid #3274AE; }
+    .section .section_inner .section_column {
+			box-sizing: border-box;
+			width: 230px;
+			border: 10px solid #012334; }
+      .section .section_inner .section_column p {
+				display: block;
+				background-color: #EAF4FF;
+				padding: 20px; }
+  .section .section_inner:last-child {
+		margin-right: 0; }
 
 /* 回答はここに書いてね */
+
+/*# sourceMappingURL=style.css.map */

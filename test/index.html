@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Template</title>
+</head>
+<style>
+	.box_wrap{
+		width: 100%;
+		height: 500px;
+		position: relative;
+	}
+	.cont{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 740px;
+		height: 300px;
+		margin: auto;
+		border: 1px solid #ccc;
+	}
+	.box1{
+		width: 740px;
+		height: 50px;
+		position: relative;
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+	}
+	.box1 p{
+		width: 240px;
+		height: 20px;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.box2{
+		position: relative;
+		width: 100%;
+		height: 200px;
+		border-bottom: 1px solid #ccc;
+	}
+	.box{
+		width: 740px;
+		height: 50px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.box span{
+		display: inline-block;
+		max-width: 320px;
+		overflow: hidden;
+		white-space:nowrap;
+		text-overflow: ellipsis;
+	}
+	.box span:before{
+		border: 1px solid #ccc;
+		background-color: #ccf;
+	}
+	.box span:first-of-type{
+		margin-right: 20px;
+	}
+	.box span:first-of-type:before{
+		content: "勤務地";
+		display: inline-block;
+	}
+	.box span:last-of-type:before{
+		content: "給料";
+		display: inline-block;
+	}
+	.gazou{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 130px;
+		height: 130px;
+		background-color: #999;
+	}
+	.text{
+		top: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		position: absolute;
+		width: 580px;
+		max-height: 130px;
+		word-wrap: break-word;
+		overflow: hidden;
+	}
+</style>
+<body>
+	<div class="box_wrap">
+		<div class="cont">
+			<div class="box1"><p>明日は明日の風が吹く株式会社</p></div>
+			<div class="box2">
+				<div class="gazou"></div>
+				<div class="text">DummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyTextDummyText</div>
+			</div>
+			<div class="box">
+				<span>あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお</span>
+				<span>あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

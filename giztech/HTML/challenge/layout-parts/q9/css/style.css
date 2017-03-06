@@ -5,62 +5,47 @@
 	margin: 0 auto;
 	padding: 20px;
 	box-sizing: border-box;
-	background-color: #ECF1F2;
-}
-.wrap .box12 .box12_inner {
-	width: 100%;
-}
-.wrap .box6 .box6_inner {
-	width: 50%;
-}
-.wrap .box4 .box4_inner {
-	width: 33.33%;
-}
-.wrap .box3 .box3_inner {
-	width: 25%;
-}
-.wrap .box2n4 .box2n4_inner {
-	width: 20%;
-}
-.wrap .box2 .box2_inner {
-	width: 16.66%;
-}
-.wrap .box63 .box63_inner_6 {
-	width: 50%;
-}
-.wrap .box63 .box63_inner_3 {
-	width: 25%;
-}
-.wrap .box24 .box24_inner_2 {
-	width: 16.66%;
-}
-.wrap .box24 .box24_inner_4 {
-	width: 33.33%;
-}
-.wrap .box_area {
-	width: 100%;
-	font-size: 0;
-	margin-bottom: 20px;
-}
-.wrap .box_area .box_inr {
-	display: inline-block;
-	text-align: center;
-	padding: 0 10px;
-	box-sizing: border-box;
-	font-size: 16px;
-	line-height: 50px;
-}
-.wrap .box_area .box_inr .box_col {
-	background-color: #fff;
-}
-.wrap .box_area .box_inr:first-child {
-	padding-left: 0;
-}
-.wrap .box_area .box_inr:last-child {
-	padding-right: 0;
-}
-.wrap .box_area:last-child {
-	margin-bottom: 0;
-}
+	background-color: #ECF1F2; }
+  .wrap .box12 .box12_inner {
+		width: 100%; }
+  .wrap .box6 .box6_inner {
+		width: 50%; }
+  .wrap .box4 .box4_inner {
+		width: 33.33%; }
+  .wrap .box3 .box3_inner {
+		width: 25%; }
+  .wrap .box2n4 .box2n4_inner {
+		width: 20%; }
+  .wrap .box2 .box2_inner {
+		width: 16.66%; }
+  .wrap .box63 .box63_inner_6 {
+		width: 50%; }
+  .wrap .box63 .box63_inner_3 {
+		width: 25%; }
+  .wrap .box24 .box24_inner_2 {
+		width: 16.66%; }
+  .wrap .box24 .box24_inner_4 {
+		width: 33.33%; }
+  .wrap .box_area {
+		width: 100%;
+		font-size: 0;
+		margin-bottom: 20px; }
+    .wrap .box_area .box_inr {
+			display: inline-block;
+			text-align: center;
+			padding: 0 10px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height: 50px; }
+      .wrap .box_area .box_inr .box_col {
+				background-color: #fff; }
+    .wrap .box_area .box_inr:first-child {
+			padding-left: 0; }
+    .wrap .box_area .box_inr:last-child {
+			padding-right: 0; }
+  .wrap .box_area:last-child {
+		margin-bottom: 0; }
 
 /* 回答はここに書いてね */
+
+/*# sourceMappingURL=style.css.map */
