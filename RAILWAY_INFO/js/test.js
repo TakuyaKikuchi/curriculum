@@ -1,3 +1,16 @@
+$(function() {
+	$.ajax({
+		url: 'https://rti-giken.jp/fhc/api/train_tetsudo/delay.json',  // 取得したいURLを指定
+		type: 'GET',
+		success: function(data) {  // 取得が成功したらdataに内容を格納
+			console.log(data);
+			console.log(data.name);
+			$('#all').html(data.responseText);  // #allに内容を出力
+			$('#container').append($('#all #id_name').html());  // #containerに#all > #id_nameのhtmlを出力
+			$('#all').remove();  //#allを削除
+		}
+	});
+}); 
 $.ajax({
 	url: 'https://rti-giken.jp/fhc/api/train_tetsudo/delay.json',
 	type: "GET",

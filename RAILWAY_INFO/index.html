@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.xdomainajax.js"></script>
-	<script src="js/tabChange.js"></script>
-	<script src="js/selectBox.js"></script>
-	<script src="js/test.js"></script>
-	<!-- <script src="js/delayRailway.js"></script> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
 	<title>RAILWAY INFO</title>
 </head>
+</head>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.xdomainajax.js"></script>
+<script src="js/selectBox.js"></script>
+<script src="js/railway.js"></script>
 <body>
 	<h1>RAILWAY INFO</h1>
 	<div class="section">
@@ -28,16 +27,92 @@
 				<div class="label">路線を選んでください</div>
 				<select id="railway_inr" data-id="railway" class="select_inr original">
 					<option>路線を選んでください</option>
-					<option>中央線</option>
-					<option>中央線</option>
-					<option>中央線</option>
-					<option>中央線</option>
-					<option>中央線</option>
-					<option>中央線</option>
+					<option>JR中央線</option>
+					<option>JR中央本線</option>
+					<option>JR五日市線</option>
+					<option>JR京浜東北線</option>
+					<option>JR京葉線</option>
+					<option>JR八高線</option>
+					<option>JR南武線</option>
+					<option>JR埼京線</option>
+					<option>JR宇都宮線</option>
+					<option>JR山手線</option>
+					<option>JR常磐線</option>
+					<option>各駅停車JR常磐線</option>
+					<option>快速JR東海道本線</option>
+					<option>JR横浜線</option>
+					<option>JR横須賀線</option>
+					<option>JR武蔵野線</option>
+					<option>JR湘南新宿ラインJR総武線</option>
+					<option>JR総武線</option>
+					<option>快速JR青梅線</option>
+					<option>JR高崎線</option>
+					<option>つくばエクスプレス線</option>
+					<option>上越新幹線</option>
+					<option>上野モノレール京成押上線</option>
+					<option>京成本線</option>
+					<option>京成金町線</option>
+					<option>京成成田空港線</option>
+					<option>京浜急行本線</option>
+					<option>京浜急行空港線</option>
+					<option>京王線</option>
+					<option>京王新線</option>
+					<option>京王井の頭線</option>
+					<option>京王相模原線</option>
+					<option>京王高尾線</option>
+					<option>京王動物園線</option>
+					<option>京王競馬場線</option>
+					<option>北総鉄道埼玉高速鉄道多摩モノレール小田急多摩線</option>
+					<option>小田急小田原線</option>
+					<option>御岳登山鉄道新交通ゆりかもめ東京りんかい線</option>
+					<option>東京メトロ丸ノ内分岐線</option>
+					<option>東京メトロ丸ノ内線</option>
+					<option>東京メトロ千代田線</option>
+					<option>東京メトロ半蔵門線</option>
+					<option>東京メトロ南北線</option>
+					<option>東京メトロ日比谷線</option>
+					<option>東京メトロ有楽町線</option>
+					<option>東京メトロ東西線</option>
+					<option>東京メトロ銀座線</option>
+					<option>東京メトロ副都心線</option>
+					<option>東京モノレール羽田線</option>
+					<option>東北新幹線</option>
+					<option>東急世田谷線</option>
+					<option>東急多摩川線</option>
+					<option>東急大井町線</option>
+					<option>東急東横線</option>
+					<option>東急池上線</option>
+					<option>東急田園都市線</option>
+					<option>東急目黒線</option>
+					<option>東武亀戸線</option>
+					<option>東武伊勢崎線</option>
+					<option>東武大師線</option>
+					<option>東武東上本線</option>
+					<option>東海道新幹線</option>
+					<option>西武国分寺線</option>
+					<option>西武多摩川線</option>
+					<option>西武多摩湖線</option>
+					<option>西武山口線</option>
+					<option>西武拝島線</option>
+					<option>西武新宿線</option>
+					<option>西武有楽町線</option>
+					<option>西武池袋線</option>
+					<option>西武西武園線</option>
+					<option>西武豊島線</option>
+					<option>都営三田線</option>
+					<option>都営大江戸線</option>
+					<option>都営新宿線</option>
+					<option>都営浅草線</option>
+					<option>都電荒川線</option>
+					<option>北陸新幹線</option>
+					<option>高尾登山電鉄線</option>
+					<option>日暮里・舎人ライナーJR上野東京ライン</option>
 				</select>
 			</div>
-			<div class="delay_button">遅延情報を取得する</div>
+			<button class="original delay_button">路線図を取得する</button>
 		</div>
 	</div>
 </body>
 </html>
+
+
