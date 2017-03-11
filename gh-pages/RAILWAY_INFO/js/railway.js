@@ -7,7 +7,7 @@ $(function(){
 	var list = [];
 	var a = "";
 	$(".delay_button").on("click",function(){
-		$(".list").remove();
+		$(".railway_list").remove();
 		var selectRail = $('.label').text();
 		console.log(selectRail);
 		$.ajax({
@@ -23,7 +23,7 @@ $(function(){
 				prev = stationNum[i].prev;
 				list += "<li>" + name + "</li>";
 			}
-			$('body').append("<ul class=" + 'list' + ">" + list + "</ul>");
+			$('.section_inr').append("<ul class=" + 'railway_list' + ">" + list + "</ul>");
 		});
 	})
 })
