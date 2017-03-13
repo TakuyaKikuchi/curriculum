@@ -2,7 +2,9 @@ $(function () {
 	var pullDown = $(".pulldown_desc");
 	var passive = $(".passive");
 	var active = $(".active");
-
+$("li").click(function(){
+	console.log("Ok");
+})
 	$(".pulldown_desc").on('click', function () {
 		if ($(this).hasClass('passive')) {
 			$(this).addClass('active');
