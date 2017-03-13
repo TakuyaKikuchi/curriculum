@@ -9,6 +9,12 @@ $(function(){
 	$(".delay_button").on("click",function(){
 		$(".railway_list").remove();
 		var selectRail = $('.label').text();
+		if(selectRail == "路線を選んでください"){
+			$(".section_inr").find("p").remove();
+			$(".section_inr").append('<p style=' + '"' + 'color:#ff0000' + '"' + '>路線を選んでください</p>');
+		} else {
+			$(".section_inr").find("p").remove();
+		}
 		console.log(selectRail);
 		$.ajax({
 			method: 'GET',
@@ -47,7 +53,7 @@ $(function(){
 					$(this).addClass('passive');
 					$(this).removeClass('active');
 					$(this)
-					.next(".pulldown_inr").slideUp();
+					.next(".pulldown_inr").slideUp()
 					$(this).find(".balloon_arrow").css({
 						display: "none"
 					})

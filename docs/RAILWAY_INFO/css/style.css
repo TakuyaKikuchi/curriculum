@@ -1,19 +1,23 @@
+@charset "UTF-8";
 body {
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased; }
 
 h1 {
+	font-family: 'Hiragino Maru Gothic ProN','ヒラギノ丸ゴ ProN W4';
 	position: relative;
-	font-size: 6.5vw;
+	font-size: 7.5vw;
 	text-align: center;
 	text-shadow: 5px 5px 5px #ccc;
-	color: #333; }
+	color: #333;
+	box-sizing: border-box;
+	padding-left: 10%; }
 
 h1:before {
-	left: 15%;
+	left: 17%;
 	position: absolute;
 	content: "\002710";
-	font-size: 6.5vw;
+	font-size: 7.5vw;
 	margin-right: 1%; }
 
 .section .original {
@@ -37,22 +41,26 @@ h1:before {
 	color: #fff;
 	position: absolute;
 	text-align: center;
-	background: linear-gradient(to right, #34b7bf 85%, #6ed1d7 15%, #6ed1d7);
-	color: #fff;
+	background: linear-gradient(to right, #fff 90%, #ccc 10%, #ccc);
+	color: #333;
+	border: 2px solid #444;
 	width: 80%;
-	height: 35px;
+	height: 55px;
 	right: 0;
 	left: 0;
 	margin: auto;
-	border-radius: 3px !important;
-	font-size: 16px !important;
+	border-radius: 15px !important;
+	font-size: 20px !important;
+	font-family: 'Hiragino Maru Gothic ProN','ヒラギノ丸ゴ ProN W4';
 	z-index: 1;
-	line-height: 35px;
+	line-height: 51px;
 	padding: 0 37px 0 8px;
 	box-sizing: border-box; }
 .section div.label:after {
 	position: absolute;
-	top: 11px;
+	top: -3px;
+	bottom: 0;
+	margin: auto;
 	right: 11px;
 	width: 8px;
 	height: 8px;
@@ -63,12 +71,12 @@ h1:before {
 	content: ""; }
 .section .select_inr {
 	width: 80%;
-	height: 35px;
+	height: 55px;
 	box-sizing: border-box;
 	left: 0;
 	right: 0;
 	top: 4px;
-	border-radius: 3px !important;
+	border-radius: 15px !important;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -161,14 +169,14 @@ h1:before {
 	text-align: center;
 	width: 80%;
 	font-size: 20px;
-	border: 5px inset #eee;
+	border: 5px solid #222;
 	padding: 5% 0;
 	border-radius: 20px;
-	background-color: #ccc;
+	background-color: #fff;
 	margin: 0 auto; }
 .section .section_inr .delay_button:hover {
 	opacity: 0.7;
-	border: 5px outset #eee; }
+	border: 5px solid #222; }
 .section .section_inr .railway_list {
 	padding: 0; }
   .section .section_inr .railway_list li {
@@ -216,5 +224,13 @@ h1:before {
 		-ms-transform: rotate(45deg);
 		-o-transform: rotate(45deg);
 		transform: rotate(45deg); }
+
+body {
+	position: relative;
+	min-height: 100%; }
+
+footer {
+	position: absolute;
+	bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
