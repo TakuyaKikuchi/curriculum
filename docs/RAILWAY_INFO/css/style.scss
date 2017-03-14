@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.clearfix:after{
+	clear: both;
+	content: "";
+	display: block;
+}
 body{
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
@@ -211,6 +216,19 @@ h1:before {
 					background-color: #eee;
 					border: 1px solid #ccc;
 					box-sizing: border-box;
+					dl{
+						width: 90%;
+						dt{
+							clear: left;
+						}
+						dd{
+							margin: 0;
+						}
+						dt,dd{
+							line-height: 22px;
+							float: left;
+						}
+					}
 				}
 				.pulldown_inr{
 					margin: 0 auto;

@@ -24,11 +24,13 @@ $(function(){
 			console.log(data);
 			var stationNum = data.response.station;
 			for (var i = 0; i < stationNum.length; i++){
+				prefecture = stationNum[i].prefecture;
 				line = stationNum[i].line;
 				name = stationNum[i].name;
 				next = stationNum[i].next;
 				prev = stationNum[i].prev;
 				length = i;
+				postal = stationNum[i].postal;
 				x = stationNum[i].x;
 				y = stationNum[i].y;
 				list +=
@@ -36,7 +38,14 @@ $(function(){
 				'<div class=' + '"' + 'pulldown_desc' + ' ' + 'passive' + '"' + '>' + name + '</div>' +
 				'<div class=' + '"' + 'pulldown_inr' + '"' + ' style=' + 'display:none' + '>' +
 				'<iframe width=' + '"' + '100%' + '"' + 'height=' + '"' + '250' + '"' + 'frameborder=' + '"' + '0' + '"' + 'scrolling=' + '"' + 'no' + '"' + 'marginheight=' + '"' + '0' + '"' + 'marginwidth=' + '"' + '0' + '"' + 'src=' + '"' + 'http://maps.google.co.jp/maps?ll=' + x + ',' + y + '&q=' + name + '&output=embed&t=m&z=18' + '"' + '></iframe>' +
-				'</div>' +
+				'<dl class=' + '"' + 'clearfix' + '"' + '>' +
+					'<dt>' + '駅 名：' + '</dt>' + '<dd>' + name + '駅' + '</dd>' +
+					'<dt>' + '路線名：' + '</dt>' + '<dd>' + line + '</dd>' +
+					'<dt>' + '都道府県：' + '</dt>' + '<dd>' + prefecture + '</dd>' +
+					'<dt>' + '郵便番号：' + '</dt>' + '<dd>' + postal + '</dd>' +
+					'<dt>' + '緯度：' + '</dt>' + '<dd>' + x + '</dd>' +
+					'<dt>' + '経度：' + '</dt>' + '<dd>' + y + '</dd>' +
+				'</dl>' +
 				'</li>';
 			}
 			$('.section_inr').append("<ul class=" + 'railway_list' + ">" + list + "</ul>");

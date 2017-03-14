@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.clearfix:after {
+		clear: both;
+		content: "";
+		display: block;
+}
+
 body {
 		margin: 0 auto;
 		-webkit-font-smoothing: antialiased;
@@ -218,6 +224,19 @@ h1:before {
 		background-color: #eee;
 		border: 1px solid #ccc;
 		box-sizing: border-box;
+}
+.section .section_inr .railway_list li div dl {
+		width: 90%;
+}
+.section .section_inr .railway_list li div dl dt {
+		clear: left;
+}
+.section .section_inr .railway_list li div dl dd {
+		margin: 0;
+}
+.section .section_inr .railway_list li div dl dt, .section .section_inr .railway_list li div dl dd {
+		line-height: 22px;
+		float: left;
 }
 .section .section_inr .railway_list li .pulldown_inr {
 		margin: 0 auto;
