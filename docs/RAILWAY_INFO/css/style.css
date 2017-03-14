@@ -1,120 +1,130 @@
 @charset "UTF-8";
 body {
-	margin: 0 auto;
-	-webkit-font-smoothing: antialiased; }
+		margin: 0 auto;
+		-webkit-font-smoothing: antialiased;
+}
 
 h1 {
-	font-family: 'Hiragino Maru Gothic ProN','ヒラギノ丸ゴ ProN W4';
-	position: relative;
-	font-size: 7.5vw;
-	text-align: center;
-	text-shadow: 5px 5px 5px #ccc;
-	color: #333;
-	box-sizing: border-box;
-	padding-left: 10%; }
+		font-family: 'Hiragino Maru Gothic ProN','ヒラギノ丸ゴ ProN W4';
+		position: relative;
+		font-size: 7.5vw;
+		text-align: center;
+		text-shadow: 5px 5px 5px #ccc;
+		color: #333;
+		box-sizing: border-box;
+		padding-left: 10%;
+}
 
 h1:before {
-	left: 17%;
-	position: absolute;
-	content: "\002710";
-	font-size: 7.5vw;
-	margin-right: 1%; }
+		left: 17%;
+		position: absolute;
+		content: "\002710";
+		font-size: 7.5vw;
+		margin-right: 1%;
+}
 
 .section .original {
-	padding: 0;
-	background: none;
-	border: none;
-	border-radius: 0;
-	font-size: 16px;
-	outline: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none; }
+		padding: 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+		font-size: 16px;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+}
 .section .select_wrap {
-	width: 100%;
-	height: 45px;
-	text-align: center;
-	position: relative;
-	background-color: #FFF;
-	margin-bottom: 20px; }
+		width: 100%;
+		height: 45px;
+		text-align: center;
+		position: relative;
+		background-color: #FFF;
+		margin-bottom: 20px;
+}
 .section div.label {
-	color: #fff;
-	position: absolute;
-	text-align: center;
-	background: linear-gradient(to right, #fff 90%, #ccc 10%, #ccc);
-	color: #333;
-	border: 2px solid #444;
-	width: 80%;
-	height: 55px;
-	right: 0;
-	left: 0;
-	margin: auto;
-	border-radius: 15px !important;
-	font-size: 20px !important;
-	font-family: 'Hiragino Maru Gothic ProN','ヒラギノ丸ゴ ProN W4';
-	z-index: 1;
-	line-height: 51px;
-	padding: 0 37px 0 8px;
-	box-sizing: border-box; }
+		color: #fff;
+		position: absolute;
+		text-align: center;
+		background: -webkit-linear-gradient(left, #fff 90%, #ccc 10%, #ccc);
+		background: linear-gradient(to right, #fff 90%, #ccc 10%, #ccc);
+		color: #333;
+		border: 2px solid #444;
+		width: 80%;
+		height: 55px;
+		right: 0;
+		left: 0;
+		margin: auto;
+		border-radius: 15px !important;
+		font-size: 20px !important;
+		font-family: 'Hiragino Maru Gothic ProN','ヒラギノ丸ゴ ProN W4';
+		z-index: 1;
+		line-height: 51px;
+		padding: 0 37px 0 8px;
+		box-sizing: border-box;
+}
 .section div.label:after {
-	position: absolute;
-	top: -3px;
-	bottom: 0;
-	margin: auto;
-	right: 11px;
-	width: 8px;
-	height: 8px;
-	border-bottom: 2px solid #fff !important;
-	border-left: 2px solid #fff !important;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	content: ""; }
+		position: absolute;
+		top: -3px;
+		bottom: 0;
+		margin: auto;
+		right: 11px;
+		width: 8px;
+		height: 8px;
+		border-bottom: 2px solid #fff !important;
+		border-left: 2px solid #fff !important;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		content: "";
+}
 .section .select_inr {
-	width: 80%;
-	height: 55px;
-	box-sizing: border-box;
-	left: 0;
-	right: 0;
-	top: 4px;
-	border-radius: 15px !important;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	display: block;
-	cursor: pointer;
-	border: none;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter: alpha(opacity=0);
-	position: relative;
-	z-index: 2;
-	margin: 20px auto; }
+		width: 80%;
+		height: 55px;
+		box-sizing: border-box;
+		left: 0;
+		right: 0;
+		top: 4px;
+		border-radius: 15px !important;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		display: block;
+		cursor: pointer;
+		border: none;
+		opacity: 0;
+		-moz-opacity: 0;
+		filter: alpha(opacity=0);
+		position: relative;
+		z-index: 2;
+		margin: 20px auto;
+}
 .section .select_inr::-ms-expand {
-	display: none; }
+		display: none;
+}
 .section .select_inr:focus {
-	z-index: -1;
-	opacity: 1;
-	-moz-opacity: 1;
-	filter: alpha(opacity=100); }
+		z-index: -1;
+		opacity: 1;
+		-moz-opacity: 1;
+		filter: alpha(opacity=100);
+}
 .section .section_inr .section_col .tabrow {
-	width: 100%;
-	text-align: center;
-	list-style: none;
-	margin: 40px 0 20px;
-	padding: 0;
-	line-height: 34px;
-	height: 36px;
-	overflow: hidden;
-	font-size: 2vw;
-	font-family: verdana;
-	position: relative; }
-  .section .section_inr .section_col .tabrow li {
+		width: 100%;
+		text-align: center;
+		list-style: none;
+		margin: 40px 0 20px;
+		padding: 0;
+		line-height: 34px;
+		height: 36px;
+		overflow: hidden;
+		font-size: 2vw;
+		font-family: verdana;
+		position: relative;
+}
+.section .section_inr .section_col .tabrow li {
 		width: 33%;
 		border: 1px solid #AAA;
 		background: #D1D1D1;
-		background: -o-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
-		background: -ms-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
-		background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
 		background: -webkit-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
 		background: linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
 		display: inline-block;
@@ -124,89 +134,105 @@ h1:before {
 		border-top-right-radius: 6px;
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
 		text-shadow: 0 1px #FFF;
-		margin: 0 -5px; }
+		margin: 0 -5px;
+}
 .section .section_inr .section_col .tabrow a {
-	color: #555;
-	text-decoration: none; }
+		color: #555;
+		text-decoration: none;
+}
 .section .section_inr .section_col .tabrow li.selected {
-	background: #FFF;
-	color: #333;
-	z-index: 2;
-	border-bottom-color: #FFF; }
+		background: #FFF;
+		color: #333;
+		z-index: 2;
+		border-bottom-color: #FFF;
+}
 .section .section_inr .section_col .tabrow:before {
-	position: absolute;
-	content: " ";
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	border-bottom: 1px solid #AAA;
-	z-index: 1; }
+		position: absolute;
+		content: " ";
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		border-bottom: 1px solid #AAA;
+		z-index: 1;
+}
 .section .section_inr .section_col .tabrow li:before,
 .section .section_inr .section_col .tabrow li:after {
-	border: 1px solid #AAA;
-	position: absolute;
-	bottom: -1px;
-	width: 5px;
-	height: 5px;
-	content: " "; }
+		border: 1px solid #AAA;
+		position: absolute;
+		bottom: -1px;
+		width: 5px;
+		height: 5px;
+		content: " ";
+}
 .section .section_inr .section_col .tabrow li:before {
-	left: -6px;
-	border-bottom-right-radius: 6px;
-	border-width: 0 1px 1px 0;
-	box-shadow: 2px 2px 0 #D1D1D1; }
+		left: -6px;
+		border-bottom-right-radius: 6px;
+		border-width: 0 1px 1px 0;
+		box-shadow: 2px 2px 0 #D1D1D1;
+}
 .section .section_inr .section_col .tabrow li:after {
-	right: -6px;
-	border-bottom-left-radius: 6px;
-	border-width: 0 0 1px 1px;
-	box-shadow: -2px 2px 0 #D1D1D1; }
+		right: -6px;
+		border-bottom-left-radius: 6px;
+		border-width: 0 0 1px 1px;
+		box-shadow: -2px 2px 0 #D1D1D1;
+}
 .section .section_inr .section_col .tabrow li.selected:before {
-	box-shadow: 2px 2px 0 #FFF; }
+		box-shadow: 2px 2px 0 #FFF;
+}
 .section .section_inr .section_col .tabrow li.selected:after {
-	box-shadow: -2px 2px 0 #FFF; }
+		box-shadow: -2px 2px 0 #FFF;
+}
 .section .section_inr .delay_button {
-	cursor: pointer;
-	display: block;
-	text-align: center;
-	width: 80%;
-	font-size: 20px;
-	border: 5px solid #222;
-	padding: 5% 0;
-	border-radius: 20px;
-	background-color: #fff;
-	margin: 0 auto; }
+		cursor: pointer;
+		display: block;
+		text-align: center;
+		width: 80%;
+		font-size: 20px;
+		border: 5px solid #222;
+		padding: 5% 0;
+		border-radius: 20px;
+		background-color: #fff;
+		margin: 0 auto;
+}
 .section .section_inr .delay_button:hover {
-	opacity: 0.7;
-	border: 5px solid #222; }
+		opacity: 0.7;
+		border: 5px solid #222;
+}
 .section .section_inr .railway_list {
-	padding: 0; }
-  .section .section_inr .railway_list li {
+		padding: 0;
+}
+.section .section_inr .railway_list li {
 		position: relative;
 		width: 75%;
 		margin: 0 auto;
-		box-sizing: border-box; }
-    .section .section_inr .railway_list li div {
-			cursor: pointer;
-			margin: 0 auto;
-			width: 100%;
-			display: block;
-			text-align: center;
-			padding: 2% 2px;
-			border-radius: 5px;
-			background-color: #eee;
-			border: 1px solid #ccc;
-			box-sizing: border-box; }
-    .section .section_inr .railway_list li .pulldown_inr {
-			margin: 0 auto;
-			width: 100%;
-			padding: 3%;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
-			text-align: center;
-			font-size: 20px;
-			background-color: #fff; }
-  .section .section_inr .railway_list li:not(:last-of-type) {
-		margin-bottom: 20px; }
-  .section .section_inr .railway_list li:not(:last-of-type):after {
+		box-sizing: border-box;
+}
+.section .section_inr .railway_list li div {
+		cursor: pointer;
+		margin: 0 auto;
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 2% 2px;
+		border-radius: 5px;
+		background-color: #eee;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+}
+.section .section_inr .railway_list li .pulldown_inr {
+		margin: 0 auto;
+		width: 100%;
+		padding: 3%;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		text-align: center;
+		font-size: 20px;
+		background-color: #fff;
+}
+.section .section_inr .railway_list li:not(:last-of-type) {
+		margin-bottom: 20px;
+}
+.section .section_inr .railway_list li:not(:last-of-type):after {
 		position: absolute;
 		content: "";
 		right: 0;
@@ -220,17 +246,30 @@ h1:before {
 		border-bottom: 5px solid #888;
 		margin: auto;
 		-webkit-transform: rotate(45deg);
-		-moz-transform: rotate(45deg);
 		-ms-transform: rotate(45deg);
-		-o-transform: rotate(45deg);
-		transform: rotate(45deg); }
+		transform: rotate(45deg);
+}
 
-body {
-	position: relative;
-	min-height: 100%; }
+html {
+		position: relative;
+		min-height: 100%;
+		box-sizing: border-box;
+		padding-bottom: 35px;
+}
 
 footer {
-	position: absolute;
-	bottom: 0; }
-
-/*# sourceMappingURL=style.css.map */
+		position: absolute;
+		bottom: 0;
+}
+footer div {
+		font-size: 20px;
+		padding: 5%;
+		display: block;
+		color: #999;
+		width: 100%;
+}
+footer div a {
+		text-decoration: none;
+		color: #999;
+		font-weight: bold;
+}
