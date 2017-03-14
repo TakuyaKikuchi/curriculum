@@ -206,7 +206,6 @@ h1:before {
 				margin: 0 auto;
 				box-sizing: border-box;
 				div{
-					cursor: pointer;
 					margin: 0 auto;
 					width: 100%;
 					display: block;
@@ -228,6 +227,19 @@ h1:before {
 							line-height: 22px;
 							float: left;
 						}
+					}
+					.more_detail{
+						padding: 0;
+						border: 1px solid #ccc;
+						background-color: #fff;
+						font-size: 15px;
+						height: 30px;
+						line-height: 28px;
+					}
+					.more_detail:before{
+						content: "\002b";
+						font-size: 15px;
+						line-height: 28px;
 					}
 				}
 				.pulldown_inr{
