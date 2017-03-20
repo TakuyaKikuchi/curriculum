@@ -5,23 +5,24 @@ $(function(){
 	var next = "";
 	var prev = "";
 	var list = [];
-	var a = "";
+	var currently = "";
+	var updata = "";
+	var moreDetail = "";
 	$(".delay_button").on("click",function(){
+		list = "";
 		$(".railway_list").remove();
 		var selectRail = $('.label').text();
 		if(selectRail == "路線を選んでください"){
 			$(".section_inr").find("p").remove();
-			$(".section_inr").append('<p style=' + '"' + 'color:#ff0000' + '"' + '>路線を選んでください</p>');
+			$(".section_inr").append('<p class="' + 'error_txt' + '"' + ' style=' + '"' + 'color:#ff0000' + '"' + '>路線を選んでください</p>');
 		} else {
 			$(".section_inr").find("p").remove();
 		}
-		console.log(selectRail);
 		$.ajax({
 			method: 'GET',
 			url: root + selectRail,
 			dataType: "jsonp"
 		}).then(function(data) {
-			console.log(data);
 			var stationNum = data.response.station;
 			for (var i = 0; i < stationNum.length; i++){
 				prefecture = stationNum[i].prefecture;
@@ -34,20 +35,25 @@ $(function(){
 				x = stationNum[i].x;
 				y = stationNum[i].y;
 				list +=
-				'<li class=' + '"' + 'getStations' + '"' + '>' +
-					'<div class=' + '"' + 'pulldown_desc' + ' ' + 'passive' + '"' + '>' + name + '</div>' +
-					'<div class=' + '"' + 'pulldown_inr' + '"' + ' style=' + 'display:none' + '>' +
-					'<iframe width=' + '"' + '100%' + '"' + 'height=' + '"' + '250' + '"' + 'frameborder=' + '"' + '0' + '"' + 'scrolling=' + '"' + 'no' + '"' + 'marginheight=' + '"' + '0' + '"' + 'marginwidth=' + '"' + '0' + '"' + 'src=' + '"' + 'http://maps.google.co.jp/maps?ll=' + x + ',' + y + '&q=' + name + '&output=embed&t=m&z=18' + '"' + '></iframe>' +
-						'<dl class=' + '"' + 'clearfix' + '"' + '>' +
-							'<dt>' + '駅 名：' + '</dt>' + '<dd>' + name + '駅' + '</dd>' +
-							'<dt>' + '路線名：' + '</dt>' + '<dd>' + line + '</dd>' +
-							'<dt>' + '都道府県：' + '</dt>' + '<dd>' + prefecture + '</dd>' +
-							'<dt>' + '郵便番号：' + '</dt>' + '<dd>' + postal + '</dd>' +
-							'<dt>' + '緯度：' + '</dt>' + '<dd>' + x + '</dd>' +
-							'<dt>' + '経度：' + '</dt>' + '<dd>' + y + '</dd>' +
-						'</dl>' +
-						'<div class=' + '"' + 'more_detail' + '"' + '>' + 'さらに詳細を見る' + '</div>' +
-					'</div>' +
+				'<li class=' + '"' + 'getStations' + ' station_' + length +  '"' + '>' +
+				'<div class=' + '"' + 'pulldown_desc' + ' ' + 'passive' + '"' + '>' + name + '</div>' +
+				'<div class=' + '"' + 'pulldown_inr' + '"' + ' style=' + 'display:none' + '>' +
+				'<iframe width=' + '"' + '100%' + '"' + 'height=' + '"' + '250' + '"' + 'frameborder=' + '"' + '0' + '"' + 'scrolling=' + '"' + 'no' + '"' + 'marginheight=' + '"' + '0' + '"' + 'marginwidth=' + '"' + '0' + '"' + 'src=' + '"' + 'http://maps.google.co.jp/maps?ll=' + x + ',' + y + '&q=' + name + '&output=embed&t=m&z=18' + '"' + '></iframe>' +
+				'<ul class="' + 'clearfix station_info' + '">' +
+				'<li>駅 名：'  + name + '駅' + '</li>' +
+				'<li>路線名：' + line + '</li>' +
+				'<li>都道府県：' + prefecture + '</li>' +
+				'<li>郵便番号：' + postal + '</li>' +
+				'<li>緯度：' + '<span class="' + 'ido' + '">' + x + '</span></li>' +
+				'<li>経度：' + '<span class="' + 'keido' + '">' + y + '</span></li>' +
+				'</ul>' +
+				'<div class=' + '"' + 'more_detail modal_show' + '"' + '>' + '天気情報を見る' + '</div>' +
+				'<div class="' + 'modal' + '"' + ' style="' + 'display:none;' + '">' +
+				'<div class="' + 'modal_content' + '">' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
 				'</li>';
 			}
 			$('.section_inr').append("<ul class=" + 'railway_list' + ">" + list + "</ul>");
@@ -70,6 +76,71 @@ $(function(){
 					})
 				}
 			});
+			$('.more_detail').on("click", function(){
+				var ido = $(this).prev().find('.ido').text();
+				var keido = $(this).prev().find('.keido').text();
+				var xy = keido + ',' + ido;
+				$(document).ready(function(){
+					$.simpleWeather({
+						location: xy,
+						unit: 'c',
+						success: function(weather) {
+							moreDetail =
+							'<ul class="' + 'weather' + '">'+
+							'<li>' + '今の天気:' + '<span>' + weather.text + '</span>' + '</li>' +
+							'<li>' + '明日の天気:' + '<span>' + weather.forecast[1].text + '</span>' + '</li>' +
+							'<li>' + '現在の気温:' + '<span>' + weather.temp + '°C' + '</span>' + '</li>' +
+							'<li>' + '最高気温:' + '<span>' + weather.high + '°C' + '</span>' + '</li>' +
+							'<li>' + '最低気温:' + '<span>' + weather.low + '°C' + '</span>' + '</li>' +
+							'<li>' + '湿度:' + '<span>' + weather.humidity + '%' + '</span>' + '</li>' +
+							'<li>' + '風速:' + '<span>' + weather.wind.speed + 'km/h' + '</span>' + '</li>' +
+							'<li>' + 'DATA:' + '<span>' + weather.updated + '</span>' + '</li>' +
+							'</ul>' +
+							'<div class="' + 'cancel_btn modal_close' + '">' + '閉じる' + '</div>';
+
+							var modal= $(".modal");
+							var modalShow= $(".modal_show");
+							var modalClose= $(".modal_close");
+							var current_scrollY = "";
+
+							modalShow.on("click",function(){
+
+								$(this).next('.modal').find('.modal_content').empty();
+
+								current_scrollY = $( window ).scrollTop();
+								$("body").css({
+									transform: 'none',
+									position: 'fixed',
+									width: '100%',
+									overflow: 'hidden',
+									zIndex: '0',
+									top: -1 * current_scrollY
+								});
+
+								$(this).next('.modal').fadeIn('slow');
+								$(this).next('.modal').find('.modal_content').append(moreDetail);
+							});
+							$(".modal,.modal_close").on("click",function(){
+								$('.modal_content').on("click",function() {
+									return false;
+								});
+								$("body").css({
+									position: 'static',
+									overflow: 'auto'
+								});
+								$('html, body').prop( { scrollTop: current_scrollY } );
+								var fadeOut = $.when(
+									modal.fadeOut('slow')
+									);
+								fadeOut.done(function(){
+									$("body").attr( { style: '' } );
+									$(this).next('.modal').remove();
+								})
+							});
+						}
+					});
+				});
+			})
 		});
 	})
 })
