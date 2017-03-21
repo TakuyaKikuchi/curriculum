@@ -70,9 +70,9 @@ $(function(){
 					.next(".pulldown_inr").slideUp()
 				}
 			});
-			$('.more_detail').on("click", function(){
-				var ido = $(this).prev().find('.ido').text();
-				var keido = $(this).prev().find('.keido').text();
+			$('.pulldown_desc').on("click", function(){
+				var ido = $(this).next().find('.ido').text();
+				var keido = $(this).next().find('.keido').text();
 				var xy = keido + ',' + ido;
 				$(document).ready(function(){
 					$.simpleWeather({
@@ -114,7 +114,24 @@ $(function(){
 								$(this).next('.modal').fadeIn('slow');
 								$(this).next('.modal').find('.modal_content').append(moreDetail);
 							});
-							$(".modal,.modal_close").on("click",function(){
+							$(".modal").on("click",function(){
+								$('.modal_content').on("click",function() {
+									return false;
+								});
+								$("body").css({
+									position: 'static',
+									overflow: 'auto'
+								});
+								$('html, body').prop( { scrollTop: current_scrollY } );
+								var fadeOut = $.when(
+									modal.fadeOut('slow')
+									);
+								fadeOut.done(function(){
+									$("body").attr( { style: '' } );
+									$(this).next('.modal').remove();
+								})
+							});
+							$('.modal_close').on("click",function(){
 								$('.modal_content').on("click",function() {
 									return false;
 								});
@@ -136,5 +153,5 @@ $(function(){
 				});
 			})
 		});
-	})
+})
 })
