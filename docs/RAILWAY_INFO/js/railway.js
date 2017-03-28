@@ -91,34 +91,33 @@ $(function(){
 							'<li>DATA:<span>' + weather.updated + '</span></li>' +
 							'</ul>' +
 							'<div class="cancel_btn modal_close">閉じる</div>';
-
-							var modal= $(".modal");
-							var modalShow= $(".modal_show");
-							var modalClose= $(".modal_close");
-							var targetY  = "";
-							var modalOpen = function(){
-								$(this).next('.modal').find('.modal_content').empty();
-								targetY = $(window).scrollTop();
-								$("body").css({
-									transform: 'none',
-									position: 'fixed',
-									width: '100%',
-									overflow: 'hidden',
-									zIndex: '0',
-									top: -1 * targetY + 'px'
-								});
-								$(this).next('.modal').fadeIn('slow');
-								$(this).next('.modal').find('.modal_content').append(moreDetail);
-							}
-							var modalClose = function(){
-								modal.fadeOut('slow');
-								$("body").attr( { style: '' } );
-								$(window).scrollTop(targetY);
-							}
-							modalShow.on("click",modalOpen);
-							$(".modal,.modal_close").on("click",modalClose);
 						}
 					});
+					var modal= $(".modal");
+					var modalShow= $(".modal_show");
+					var modalClose= $(".modal_close");
+					var targetY  = "";
+					var modalOpen = function(){
+						$(this).next('.modal').find('.modal_content').empty();
+						targetY = $(window).scrollTop();
+						$("body").css({
+							transform: 'none',
+							position: 'fixed',
+							width: '100%',
+							overflow: 'hidden',
+							zIndex: '0',
+							top: -1 * targetY + 'px'
+						});
+						$(this).next('.modal').fadeIn('slow');
+						$(this).next('.modal').find('.modal_content').append(moreDetail);
+					}
+					var modalClose = function(){
+						modal.fadeOut('slow');
+						$("body").attr( { style: '' } );
+						$(window).scrollTop(targetY);
+					}
+					modalShow.on("click",modalOpen);
+					$(".modal,.modal_close").on("click",modalClose);
 				});
 			})
 		});
