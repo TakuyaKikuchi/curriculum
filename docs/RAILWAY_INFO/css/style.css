@@ -87,6 +87,10 @@ html footer div a {
 		background-color: #FFF;
 		margin-bottom: 20px;
   }
+  .section .about_txt {
+		text-align: left;
+		line-height: 1.5;
+  }
   .section div.label {
 		overflow: hidden;
 		white-space: nowrap;

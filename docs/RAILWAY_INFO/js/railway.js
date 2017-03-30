@@ -79,9 +79,10 @@ $(function(){
 						location: xy,
 						unit: 'c',
 						success: function(weather) {
+							console.log(weather);
 							moreDetail =
 							'<ul class="weather">'+
-							'<li>今の天気:<span>' + weather.text + '</span></li>' +
+							'<li>今の天気:<span class="weather_text">' + weather.text + '</span></li>' +
 							'<li>明日の天気:<span>' + weather.forecast[1].text + '</span></li>' +
 							'<li>現在の気温:<span>' + weather.temp + '°C' + '</span></li>' +
 							'<li>最高気温:<span>' + weather.high + '°C' + '</span></li>' +
