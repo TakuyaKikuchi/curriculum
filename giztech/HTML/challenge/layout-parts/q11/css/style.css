@@ -45,11 +45,11 @@
 		transition: all 0.5s; }
 
 .circle_box {
-	-webkit-animation: spin 1s infinite linear;
-	-moz-animation: spin 1s infinite linear;
-	-ms-animation: spin 1s infinite linear;
-	-o-animation: spin 1s infinite linear;
-	animation: spin 1s infinite linear; }
+	-webkit-animation: spin .1s infinite linear;
+	-moz-animation: spin .1s infinite linear;
+	-ms-animation: spin .1s infinite linear;
+	-o-animation: spin .1s infinite linear;
+	animation: spin .1s infinite linear; }
   .circle_box .circle {
 		margin: 0 auto;
 		width: 100px;
