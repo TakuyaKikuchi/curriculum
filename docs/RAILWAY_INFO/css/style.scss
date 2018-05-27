@@ -1,5 +1,5 @@
 @charset "UTF-8";
-html{b	position: relative;
+html{	position: relative;
 	min-height: 100%;
 	box-sizing: border-box;
 	padding-bottom: 35px;
@@ -11,7 +11,7 @@ html{b	position: relative;
 			position: relative;
 			font-size: 7.5vw;
 			text-align: center;
-			text-shadow: 5px 5px 5px #ccc;
+			text-shadow: 3px 3px 2px #ccc;
 			color: #333;
 			box-sizing: border-box;
 			padding-left: 10%;
@@ -85,6 +85,7 @@ html{b	position: relative;
 		.about_txt{
 			text-align: left;
 			line-height: 1.5;
+			text-shadow: 3px 3px 2px #ccc;
 		}
 		div.label {
 			overflow: hidden;
@@ -335,13 +336,20 @@ html{b	position: relative;
 				display: block;
 				text-align: center;
 				width: 100%;
-				font-size: 20px;
+				font-size: 6vw;
 				border: 5px solid #222;
-				padding: 5% 0;
+				padding: 5% 0 5% 15%;
 				border-radius: 20px;
 				background-color: #fff;
 				margin: 0 auto;
 				box-sizing: border-box;
+				background: url(../img/icon_train.png) no-repeat 10% center;
+				background-size: 10%;
+				-webkit-transition: all .2s linear;
+				-moz-transition: all .2s linear;
+				-ms-transition: all .2s linear;
+				-o-transition: all .2s linear;
+				transition: all .2s linear;
 				div{
 					position: relative;
 					margin: 0 auto;
@@ -360,6 +368,9 @@ html{b	position: relative;
 				.more_detail_inr{
 					display: none;
 				}
+			}
+			.delay_button:active{
+				background: url(../img/icon_train.png) no-repeat 10% 15px;
 			}
 		}
 		ul.weather{
